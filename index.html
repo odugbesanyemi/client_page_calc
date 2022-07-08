@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <meta
+      name="description"
+      content="This page contains a form to allow user submit files of all file types and also a calculator to get costing of job details before submission of files"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Submit Data</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Submit Data</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarID">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="hero-section">
+      <div class="container hero-content">
+        <h1>Submit Data</h1>
+        <p>Kindly attach Document for processing</p>
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section id="user-form">
+      <div class="container">
+        <div id="step1">
+          <div class="jumbotron mb-4">
+            <h3 class="fs-2 text-danger">Step 1</h3>
+            <p class="text-secondary mb-4">
+              <ion-icon name="server-outline" class="pe-2"></ion-icon>
+              Upload Document for futher clearance
+            </p>
+          </div>
+          <form action="#" method="POST" enctype="multipart/form-data">
+            <input type="file" name="" id="#" />
+            <br />
+            <button type="submit" class="btn btn-warning rounded-1 my-3">
+              Upload Document
+            </button>
+          </form>
+        </div>
+        <div id="step2" class="mt-4">
+          <div class="jumbotron mb-4 container">
+            <h3 class="fs-2">Step 2</h3>
+            <p class="text-secondary mb-4">
+              <ion-icon name="calculator-outline" class="pe-2"></ion-icon>
+              Calculate Cost of Production
+            </p>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque
+              doloremque ad nisi, veritatis facere quidem non omnis esse,
+              voluptatibus dolores aspernatur, provident ea voluptate deserunt
+              delectus aliquam fugiat fugit!
+            </p>
+            <button>Try our Calculator</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

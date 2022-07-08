@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  font-family: "mukta", sans-serif;
+}
+p,h2,h3{
+    overflow-y: hidden;
+}
+body{
+    background-color: ghostwhite;
+}
+#hero-section {
+  min-height: 300px;
+  background-color: blue;
+  background: url("../assets/hero-bg.webp");
+  color: white;
+  position: relative;
+  background-size: cover;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  box-sizing: border-box;
+}
+.hero-content h1,p,li,a {
+  overflow: hidden;
+  color: white ;
+  text-decoration: none;
+}
+section {
+    padding: 50px 0;
+}
+#step1{
+    /* border: 1px dashed rgba(0, 0, 0, 0.409); */
+    border-radius: 10px;
+    padding: 30px 50px;
+    background:linear-gradient(90deg, rgba(153, 153, 153, 0.074),rgba(153, 153, 153, 0.074)) ;
+}
