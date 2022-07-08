@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Submit Data</a>
           <button
@@ -72,7 +72,7 @@
             </button>
           </form>
         </div>
-        <div id="step2" class="mt-4">
+        <div id="step2" class="mt-4 text-danger">
           <div class="jumbotron mb-4 container">
             <h3 class="fs-2">Step 2</h3>
             <p class="text-secondary mb-4">
@@ -85,15 +85,59 @@
               voluptatibus dolores aspernatur, provident ea voluptate deserunt
               delectus aliquam fugiat fugit!
             </p>
-            <button>Try our Calculator</button>
+            <button class="btn btn-success" id="calcBtn">Try our Calculator</button>
           </div>
         </div>
       </div>
     </section>
-    <footer></footer>
-  </body>
+    <section class="calc">
+      <div id="container">
+        <div class="closeBtn p-3 bg-danger p-absolute">X</div>
+        <div id="calculator">
+          <div id="result">
+            <div id="history">
+              <p id="history-value"></p>
+            </div>
+            <div id="output">
+              <p id="output-value"></p>
+            </div>
+          </div>
+          <div id="keyboard">
+            <button class="operator" id="clear">C</button>
+            <button class="operator" id="backspace">CE</button>
+            <button class="operator" id="%">%</button>
+            <button class="operator" id="÷">&#247;</button>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+            <button class="operator" id="x">&times;</button>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="operator" id="-">-</button>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="operator" id="+">+</button>
+            <button class="empty" id="empty"></button>
+            <button class="number" id="0">0</button>
+            <button class="empty" id="empty"></button>
+            <button class="operator" id="=">=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-secondary">
+      <div class="d-flex container py-3 justify-content-between ">
+        <p class="m-0"> &copy; copyright 2022 Tecxha IT Solutions</p>
+        <p class="m-0">View license</p>
+      </div>
+    </footer>
+  </body>  
+  <script src="js/script.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
